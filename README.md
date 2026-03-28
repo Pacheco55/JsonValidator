@@ -53,7 +53,7 @@ Un validador convencional te dice **si** el JSON es válido. Un **analizador sin
 
 ## Instalación y ejecución rápida
 
-### Opción A — Ejecutable compilado (recomendada)
+### Ejecutable compilado (recomendada)
 
 Descarga el binario desde [Releases](../../releases) y ejecútalo directamente:
 
@@ -64,42 +64,6 @@ JSONValidatorPro.app    ←  macOS   (doble clic)
 ```
 
 > No requiere Python. No requiere instalación. No requiere conexión.
-
----
-
-### Opción B — Desde el código fuente
-
-**Requisito:** Python 3.9 o superior.
-
-```bash
-# 1. Clonar el repositorio
-git clone https://github.com/Pacheco55/json-validator-pro.git
-cd json-validator-pro
-
-# 2. Instalar la única dependencia opcional (drag-and-drop)
-pip install tkinterdnd2
-
-# 3. Ejecutar
-python json_validator_pro.py
-```
-
-> `tkinterdnd2` es opcional. Sin ella, la aplicación funciona completa excepto el drag-and-drop.
-
----
-
-### Opción C — Compilar tu propio ejecutable
-
-```bash
-pip install pyinstaller tkinterdnd2
-
-# Windows
-build_windows.bat
-
-# Linux / macOS
-chmod +x build_unix.sh && ./build_unix.sh
-```
-
-El ejecutable aparece en `dist/JSONValidatorPro`.
 
 ---
 
